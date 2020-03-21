@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pixabay Search (Express Version)</title>
+
+        <link rel="stylesheet" href="css/style.css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Trade+Winds&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <h1> Pixabay Search (Express Version) </h1>
+        
+        <form action="/results" method="GET">
+            
+            Keyword: <input type="text" name="keyword">
+            <br>
+            Orientation:
+            <select id="orientation" name="orientation">
+                <option value="horizontal">horizontal</option>
+                <option value="vertical">vertical</option>
+            </select>
+            <button class="btn"> Search! </button>
+            
+        </form> <br>
+        
+        <div class="container">
+            <figcaption>Likes: <%= images.hits[0].likes %></figcaption>
+            <img src='<%= images.hits[0].largeImageURL %>' width='250'> 
+        </div>
+        
+        <div class="container">
+            <figcaption>Likes: <%= images.hits[1].likes %></figcaption>
+            <img src='<%= images.hits[1].largeImageURL %>' width='250'>
+        </div>
+        
+        <div class="container">
+            <figcaption>Likes: <%= images.hits[2].likes %></figcaption>
+            <img src='<%= images.hits[2].largeImageURL %>' width='250'>
+        </div>
+        
+        <div class="container">
+            <figcaption>Likes: <%= images.hits[3].likes %></figcaption>
+            <img src='<%= images.hits[3].largeImageURL %>' width='250'>
+        </div>
+
+    </body>
+</html>

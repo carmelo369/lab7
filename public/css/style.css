@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+    background-color: LightGreen;
+}
+img {
+    border-radius: 25px;
+}
+.btn{
+  /*background-color: white; */
+  color: black; 
+  border: 2px solid #4CAF50;
+}
+input[type=text] {
+  box-sizing: border-box;
+  border: 2px solid red;
+  border-radius: 4px;
+}
+h1{
+  font-family: 'Trade Winds', "italics" ;
+}
+.container {
+  display: inline-table;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
